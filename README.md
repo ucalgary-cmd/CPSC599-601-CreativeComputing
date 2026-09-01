@@ -1,6 +1,6 @@
 # CPSC 599+601 Creative Computing
 
-https://ucalgary-cmd.github.io/CPSC599+601-CreativeComputing
+https://ucalgary-cmd.github.io/CPSC599-601-CreativeComputing
 
 ## Author
 

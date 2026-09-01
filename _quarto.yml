@@ -10,7 +10,7 @@ author:
           url: https://ilab.ucalgary.ca/labs/shivers/  
     roles: "Assistant Professor"
     url: https://profiles.ucalgary.ca/christian-frisson
-url: https://ucalgary-cmd.github.io/CPSC599+601-CreativeComputing
+url: https://ucalgary-cmd.github.io/CPSC599-601-CreativeComputing
 license: "CC BY-NC-SA"
 project:
   output-dir: .
