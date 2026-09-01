@@ -1,0 +1,29 @@
+---
+# Extends metadata from _quarto.yml
+date: 2026-09-01
+---
+
+## Schedule
+
+<small><small>
+
+(Subject to change with notification - in D2L \> Course Information \> Schedule)
+
+| Week | Tuesday | Thursday |
+|------------------------|------------------------|------------------------|
+| Week 1 (Aug 31 - Sep 4) | **Lecture** ([*Course Intro*](index.html)) | **Lecture** (*Git*: Versioning, Documentation, Integration) |
+| Week 2 (Sep 7-11) | **Lecture** ([*Accessibility*](lecture-a11y.html)) | **Lecture** (*Glueing Modalities: Sequencers, Mappers*) + Mapping Tools Workshop 2026 |
+| Week 3 (Sep 14-18) | (Personal) **Pitch** (Course Expectations and Project Ideation) | **Lecture + Studio** ([*Audio*](lecture-audio.html): Synthesis, Sampling, Spatial) |
+| Week 4 (Sep 21-25) | **Interactive Presentations** (*Audio*) | **Lecture + Studio** ([*Vision*](lecture-vision.html): Graphics, Video, Projection Mapping) |
+| Week 5 (Sep 28 - Oct 2) | **Interactive Presentations** (*Vision*) | **Lecture + Studio** ([*Touch*](lecture-touch.html): Haptics) |
+| Week 6 (Oct 5-9) | **Interactive Presentations** (*Touch*) | **Lecture + Studio** ([*Interaction*](lecture-interaction.html): Input, Cameras, Sensors, Embedded Computing) |
+| Week 7 (Oct 12-16) | **Interactive Presentations** (*Interaction*) | (Guest) **Lecture** ([*Gen AI*](lecture-genai.html)) by [Ahmed Abuzuraiq](https://abuzreq.com) |
+| Week 8 (Oct 19-23) | (Group) **Pitch** (Project Ideation) | (Group) **Project** (Low-fidelity Prototyping) |
+| Week 9 (Oct 26-30) | **Interactive Presentations** (Low-fidelity Prototype Showcase) | (Group) **Project** (High-fidelity Prototyping) |
+| Week 10 (Nov 2-6) | **None** (Term Break) | **None** (Term Break) |
+| Week 11 (Nov 9-13) | (Group) **Project** (High-fidelity Prototyping) | (Group) **Project** (High-fidelity Prototyping) |
+| Week 12 (Nov 16-20) | **Interactive Presentations** (High-fidelity Prototype Showcase) | (Group) **Project** (Final Version Prototyping) |
+| Week 13 (Nov 23-27) | (Group) **Project** (Final Version Prototyping) | (Group) **Project** (Final Version Prototyping) |
+| Week 14 (Nov 30 - Dec 4) | **Interactive Presentations** (Final Version Showcase) | **Individual Reflections Due** + (Group) **Project** **Documentation Due** + **Lecture** (*Course Reflection*) |
+
+</small></small>

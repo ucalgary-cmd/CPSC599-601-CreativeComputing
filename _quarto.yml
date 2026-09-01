@@ -1,0 +1,27 @@
+title: CPSC 599+601 Creative Computing
+author: 
+  - name: Christian Frisson <br/> ![](images/portraits/ChristianFrisson.jpg){.portrait}
+    affiliation: 
+        - name: "![](images/logos/Logo_Horz_Colour.png){.logo}" # University of Calgary
+          url: https://www.ucalgary.ca
+        - name: "![](images/logos/ilab-logo.png){.logo}" # Interactions Lab
+          url: https://ilab.ucalgary.ca
+        - name: "![](images/logos/shivers.png){.logo}" # SHIVERS Group
+          url: https://ilab.ucalgary.ca/labs/shivers/  
+    roles: "Assistant Professor"
+    url: https://profiles.ucalgary.ca/christian-frisson
+url: https://ucalgary-cmd.github.io/CPSC599+601-CreativeComputing
+license: "CC BY-NC-SA"
+project:
+  output-dir: .
+  render:
+    - "*.qmd"
+  post-render:
+    - scripts/merge-files.py
+format:
+  revealjs:
+    slide-number: c/t
+    logo: images/logos/CMD-green.svg
+    incremental: true   
+    theme: [white, custom.scss]
+    axe: false

@@ -1,0 +1,34 @@
+/*-- scss:rules --*/
+
+// .reveal h1 {
+// color: blue;
+// }  
+
+.logo {
+    vertical-align: middle;
+    width:auto;
+    height:35px;
+}
+
+.portrait {
+    // display: block;
+//   width: 50%; /* Must be less than 100% */
+//   margin-left: 50%;
+//   margin-right: auto;
+// align-content: center;
+    width: 100px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.cite {
+    font-size: medium;
+}
+
+.affiliation {
+    font-size: medium;
+}
+
+.quarto-title-affiliation {
+    display: inline;
+}
