@@ -1,0 +1,384 @@
+---
+# Extends metadata from _quarto.yml
+subtitle: "Lecture: Creative Computing"
+date: 2026-09-01
+---
+
+# Today's outline
+
+- Introduction
+- Communication
+- Installation
+
+# Introduction
+
+![](images/3rdparty/BretVictorResearchAgenda/Poster.jpg)
+
+<small> Bret Victor's [Research Agenda](https://worrydream.com/cdg/ResearchAgenda-v0.19-poster.pdf), Communications Design Group SF, 2014. </small>
+
+## Modes of Representation of Concepts
+
+![](images/3rdparty/BretVictorResearchAgenda/ConceptRepresentationModes.png)
+
+## Modes of Communication of Representations
+
+![](images/3rdparty/BretVictorResearchAgenda/RepresentationCommunicationModes.png)
+
+## Communication Framework
+
+![](images/3rdparty/BretVictorResearchAgenda/CommunicationFramework.png)
+
+## Modes of Communication
+
+::::: columns
+::: {.column width="50%"}
+![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/FaceToFace.png){.logo} Face-to-face
+
+![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Reading.png){.logo} Reading
+
+![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Writing.png){.logo} Writing
+:::
+
+::: {.column width="50%"}
+![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Presenting.png){.logo} Presenting
+
+![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Browsing.png){.logo} Browsing, discovering, connecting
+
+![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Creating.png){.logo} Creating new knowledge
+:::
+:::::
+
+## Projects
+
+![](images/3rdparty/BretVictorResearchAgenda/Projects.jpg)
+
+## Mode of Communication <br/> ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/FaceToFace.png){.logo} Face-to-face
+
+## ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/FaceToFace.png){.logo} Dynamic Conversation
+
+:::: r-hstack
+::: desc
+<ul>
+
+<li><b>Mode of communication:</b><small>person-to-person, face-to-face, realtime, improvised</small></li>
+
+<li><b>Today:</b><br/><small>picture in the head</small></li>
+
+<li><b>Vision:</b><small>dynamic sketching for evidence-backed show and tell</small></li>
+
+</ul>
+:::
+
+![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicConversation-Bottom.jpg){width="100%"} ![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicConversation-Top.jpg){width="100%"}
+::::
+
+## ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/FaceToFace.png){.logo} Dynamic Creative Play
+
+:::: r-hstack
+::: desc
+<ul>
+
+<li><b>Mode of communication:</b><small>casual, playful, realtime, improvised, shared experience</small></li>
+
+<li><b>Today:</b><small>passive, non-creative, isolating, anti-social</small></li>
+
+<li><b>Vision:</b><small>everyone participates/sees/understands the same thing</small></li>
+
+</ul>
+:::
+
+![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicCreativePlay.jpg){width="80%"}
+::::
+
+## Mode of Communication <br/> ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Presenting.png){.logo} Presenting
+
+## ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Presenting.png){.logo} Dynamic Presentation
+
+:::: r-hstack
+::: desc
+<ul>
+
+<li><b>Mode of communication:</b><small>person-to-group, realtime, prepared outline but improvised details</small></li>
+
+<li><b>Today:</b><small>flexible blackboard or scripted static slides</small></li>
+
+<li><b>Vision:</b><small>sketch from scratch evidence-backed dynamic representations</small></li>
+
+</ul>
+:::
+
+![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicPresentation.jpg){width="100%"}
+::::
+
+## ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Presenting.png){.logo} Dynamic Stage
+
+:::: r-hstack
+::: desc
+<ul>
+
+<li><b>Mode of communication:</b><small>spatial environment in which a presentation takes place</small></li>
+
+<li><b>Today:</b><small>presentation material without stage design vs play and set</small></li>
+
+<li><b>Vision:</b><small>mapping between concept/physical spaces, human-scale representations, layout is outline</small></li>
+
+</ul>
+:::
+
+![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicStage.jpg){width="100%"}
+::::
+
+## Mode of Communication <br/> ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Reading.png){.logo} Reading
+
+## ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Reading.png){.logo} Dynamic Reading
+
+:::: r-hstack
+::: desc
+<ul>
+
+<li><b>Mode of communication:</b><small>media-to-person, solitary, deliberate, prolonged, contemplative</small></li>
+
+<li><b>Today:</b><small>concepts represented with words, mass-produced, one-size-fits-all</small></li>
+
+<li><b>Vision:</b><small>multi-channel, skimmable, transformable, explorable, context-sensitive, interrogable</small></li>
+
+</ul>
+:::
+
+![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicReading-Bottom.jpg){width="40%"} ![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicReading-Middle.jpg){width="40%"} ![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicReading-Top.jpg){width="40%"}
+::::
+
+## ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Reading.png){.logo} Dynamic Spatial Media
+
+:::: r-hstack
+::: desc
+<ul>
+
+<li><b>Mode of communication:</b><small>media-to-person, personal,prolonged, contemplative — but human-scale, and experienced with the body</small></li>
+
+<li><b>Today:</b><small>rectangular representations, focal vision, flat, intangible, hands neglected</small></li>
+
+<li><b>Vision:</b><small>Spatial textbooks, published and downloaded</small></li>
+
+</ul>
+:::
+
+![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicSpatialMedia.jpg){width="100%"}
+::::
+
+## Mode of Communication <br/> ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Browsing.png){.logo} Browsing, discovering, connecting
+
+## ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Browsing.png){.logo} Dynamic Library
+
+:::: r-hstack
+::: desc
+<ul>
+
+<li><b>Mode of communication:</b><small>walkable environment for browsing and discovering knowledge</small></li>
+
+<li><b>Today:</b><small>layouts of shelves of spines and books of papers conveying poor information</small></li>
+
+<li><b>Vision:</b><small>dynamic, multi-channel, at all time/distance scales, with spatially-anchored overview and connections</small></li>
+
+</ul>
+:::
+
+![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicLibrary.jpg){width="100%"}
+::::
+
+## ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Browsing.png){.logo} Research Gallery
+
+:::: r-hstack
+::: desc
+<ul>
+
+<!-- <li><b>Mode of communication:</b><small></small></li> -->
+
+<li><b>Today:</b><small>prior work displayed in space, less to learn than website/papers</small></li>
+
+<li><b>Vision:</b><small>intellectual environnment, physical presence, immersed, connections, space is a form of publication</small></li>
+
+</ul>
+:::
+
+![](images/3rdparty/BretVictorResearchAgenda/Projects/ResearchGallery.jpg){width="100%"}
+::::
+
+## ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Browsing.png){.logo} Representation Gallery
+
+:::: r-hstack
+::: desc
+<ul>
+
+<!-- <li><b>Mode of communication:</b><small></small></li> -->
+
+<li><b>Today:</b><small>design of visualization and programming languages, but not of representations</small></li>
+
+<li><b>Vision:</b><small>dynamic representations, for generalization/instantiation/analogy on corpus of ideas</small></li>
+
+</ul>
+:::
+
+![](images/3rdparty/BretVictorResearchAgenda/Projects/RepresentationGallery.jpg){width="100%"}
+::::
+
+## Mode of Communication <br/> ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Writing.png){.logo} Writing
+
+## ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Writing.png){.logo} Dynamic Authoring
+
+:::: r-hstack
+::: desc
+<ul>
+
+<li><b>Mode of communication:</b><small>person-to-media, deliberate, prolonged</small></li>
+
+<li><b>Today:</b><small>materials are static/manipulated or dynamic/scripted</small></li>
+
+<li><b>Vision:</b><small>directly manipulate representations of behavior and data</small></li>
+
+</ul>
+:::
+
+![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicAuthoring.jpg){width="100%"}
+::::
+
+## Mode of Communication <br/> ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Creating.png){.logo} Creating new knowledge
+
+## ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Creating.png){.logo} Dynamic Mathematics
+
+:::: r-hstack
+::: desc
+<ul>
+
+<li><b>Mode of communication:</b><small>set of tools for modeling physical systems, in order to understand, predict, and design them</small></li>
+
+<li><b>Today:</b><small>opaque representations, blind manipulation</small></li>
+
+<li><b>Vision:</b><small>evocative multimodal representations</small></li>
+
+</ul>
+:::
+
+![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicMathematics.jpg){width="100%"}
+::::
+
+## ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Creating.png){.logo} Dynamic Objects To Think With
+
+:::: r-hstack
+::: desc
+<ul>
+
+<li><b>Mode of communication:</b><small>representation that’s designed to be inspected and manipulated with the hands</small></li>
+
+<li><b>Today:</b><small>flat and intangible, ink on paper or pixels on a screen</small></li>
+
+<li><b>Vision:</b><small>dynamic abstract/symbolic concepts felt and manipulated by the fingers</small></li>
+
+</ul>
+:::
+
+![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicObjectsToThinkWith-Bottom.jpg){width="50%"} ![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicObjectsToThinkWith-Top.jpg){width="50%"}
+::::
+
+## ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Creating.png){.logo} Dynamic Environments To Think With
+
+:::: r-hstack
+::: desc
+<ul>
+
+<li><b>Mode of communication:</b><small>representation that’s designed to be explored and manipulated with the body</small></li>
+
+<li><b>Today:</b><small>static design environments, paper or screens, immobile</small></li>
+
+<li><b>Vision:</b><small>human-scale spatial representations, physical tangible tools</small></li>
+
+</ul>
+:::
+
+![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicEnvironmentsToThinkWith.jpg){width="100%"}
+::::
+
+## Modes of Communication of Representations (Repeat)
+
+![](images/3rdparty/BretVictorResearchAgenda/RepresentationCommunicationModes.png)
+
+## More information
+
+![](images/3rdparty/BretVictorResearchAgenda/Poster.jpg)
+
+- <https://worrydream.com>
+- <https://dynamicland.org>
+
+# Communication
+
+![](images/3rdparty/BretVictorResearchAgenda/CommunicationFramework.png)
+
+- Collaboration
+- Inspiration
+- Creation
+- Documentation
+- Presentation
+
+## Explorable Explanations
+
+```{=html}
+<iframe width="100%" height="100%" src="https://explorabl.es/"></iframe>
+```
+
+## Our toolchain
+
+- [Visual Studio Code](https://code.visualstudio.com/) or [VSCodium](https://vscodium.com/) plus extensions:
+  - [Quarto](https://github.com/quarto-dev/quarto.git#main): to create **Interactive Presentations** and **Pitches** ([revealjs](https://revealjs.com)) from Markdown.
+  - [C/C++](https://github.com/microsoft/vscode-cpptools) PLUS [extra compiler installation](https://github.com/microsoft/vscode-cpptools#overview-and-tutorials) needed for the ([*Touch*](lecture-touch.html): Haptics) **Studio**.
+  - [LTeX+](https://github.com/ltex-plus/vscode-ltex-plus.git): grammar/spell checking using LanguageTool.
+- Git, [GitHub](https://github.com/) (Pages)
+
+## About Quarto
+
+```{=html}
+<iframe width="100%" height="100%" src="https://quarto.org/"></iframe>
+```
+
+## Need tutorials on git?
+
+```{=html}
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?si=QLhK4wVwOGT_oUF6&amp;list=PLWuPyCyP7tT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
+# Next steps
+
+::::: columns
+::: {.column width="50%"}
+Develop
+
+<small>
+
+- **Create** a [GitHub](https://github.com/) account.
+- **Share** it with [ChristianFrisson](https://github.com/ChristianFrisson) by following his account.
+- [ChristianFrisson](https://github.com/ChristianFrisson) will create a [new GitHub repository](https://github.com/new) in [ucalgary-cmd](https://github.com/ucalgary-cmd) for your individual interactive presentations and pitch:
+  - Name: `CPSC599-601-CreativeComputing-F26-<name>`
+  - Visibility: first private, then your choice to make it public.
+  - License: your choice (tip: [choosealicense.com](https://choosealicense.com/)).
+- [ChristianFrisson](https//github.com/ChristianFrisson) will invite you to join your repository as admin.
+
+</small>
+:::
+
+::: {.column width="50%"}
+Design
+
+<small>
+
+![
+Saul Greenberg, Sheelagh Carpendale, Nicolai Marquardt and Bill Buxton,  
+[Sketching User Experiences: The Workbook](https://sketchbook.cpsc.ucalgary.ca/), 
+Morgan Kaufmann Press.
+](images/3rdparty/sketchbook-cover-medium.jpg){width="40%"}
+
+- **Sketch** what you would like to create in this course!
+- **Snap** a picture.
+- **Upload** your picture in your GitHub repository.
+
+</small>
+:::
+:::::
