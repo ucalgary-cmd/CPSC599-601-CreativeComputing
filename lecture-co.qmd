@@ -1,7 +1,7 @@
 ---
 # Extends metadata from _quarto.yml
 subtitle: "Lecture: Creative Computing"
-date: 2026-09-01
+date: 2026-09-03
 ---
 
 # Today's outline
@@ -309,6 +309,12 @@ date: 2026-09-01
 - <https://worrydream.com>
 - <https://dynamicland.org>
 
+## Dynamicland Intro
+
+{{< video https://www.youtube.com/watch?v=5Q9r-AEzRMA width="100%" height="100%" >}}
+
+<!-- https://dynamicland.org/2024/Intro/ -->
+
 # Communication
 
 ![](images/3rdparty/BretVictorResearchAgenda/CommunicationFramework.png)
@@ -341,16 +347,15 @@ date: 2026-09-01
 
 ## Need tutorials on git?
 
-```{=html}
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?si=QLhK4wVwOGT_oUF6&amp;list=PLWuPyCyP7tT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-```
+Here is [Steve Sutcliffe](https://profiles.ucalgary.ca/steve-sutcliffe)'s [playlist](https://www.youtube.com/playlist?list=PLWuPyCyP7tT8).
+
+<iframe width="100%" height="85%" src="https://www.youtube.com/embed/videoseries?si=z1xU8jxhmZPbCIIZ&amp;list=PLWuPyCyP7tT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # Next steps
 
 ::::: columns
 ::: {.column width="50%"}
 Develop
-
 <small>
 
 - **Create** a [GitHub](https://github.com/) account.
@@ -363,12 +368,10 @@ Develop
 
 </small>
 :::
-
 ::: {.column width="50%"}
 Design
 
 <small>
-
 ![
 Saul Greenberg, Sheelagh Carpendale, Nicolai Marquardt and Bill Buxton,  
 [Sketching User Experiences: The Workbook](https://sketchbook.cpsc.ucalgary.ca/), 
