@@ -4,6 +4,8 @@ subtitle: "Lecture: Creative Computing"
 date: 2026-09-03
 ---
 
+{{< include schedule.qmd >}}
+
 # Today's outline
 
 - Introduction
@@ -69,7 +71,7 @@ date: 2026-09-03
 </ul>
 :::
 
-![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicConversation-Bottom.jpg){width="100%"} ![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicConversation-Top.jpg){width="100%"}
+![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicConversation-Bottom.jpg){width="80%"} ![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicConversation-Top.jpg){width="80%"}
 ::::
 
 ## ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/FaceToFace.png){.logo} Dynamic Creative Play
@@ -87,7 +89,7 @@ date: 2026-09-03
 </ul>
 :::
 
-![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicCreativePlay.jpg){width="80%"}
+![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicCreativePlay.jpg){width="60%"}
 ::::
 
 ## Mode of Communication <br/> ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Presenting.png){.logo} Presenting
@@ -277,7 +279,7 @@ date: 2026-09-03
 </ul>
 :::
 
-![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicObjectsToThinkWith-Bottom.jpg){width="50%"} ![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicObjectsToThinkWith-Top.jpg){width="50%"}
+![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicObjectsToThinkWith-Bottom.jpg){width="45%"} ![](images/3rdparty/BretVictorResearchAgenda/Projects/DynamicObjectsToThinkWith-Top.jpg){width="45%"}
 ::::
 
 ## ![](images/3rdparty/BretVictorResearchAgenda/ModesCommunication/Creating.png){.logo} Dynamic Environments To Think With
