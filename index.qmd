@@ -10,6 +10,8 @@ to CPSC 599+601 Creative Computing!
 
 ![](images/logos/CMD-green.svg)
 
+{{< include schedule.qmd >}}
+
 # Today's outline
 
 - Introduction
