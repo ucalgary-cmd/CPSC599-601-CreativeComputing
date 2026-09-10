@@ -1,0 +1,141 @@
+---
+# Extends metadata from _quarto.yml
+subtitle: "Glueing Modalities: Sequencers, Mappers + Mapping Tools Workshop 2026"
+date: 2026-09-10
+---
+
+{{< include schedule.qmd >}}
+
+# Today's outline
+
+- Very short introduction
+    - Glueing Modalities: Sequencers, Mappers
+- [7th Annual Mapping Tools Workshop 2026](https://groups.google.com/g/dot_mapper/c/ZxyRFaccmJ0) organized by [Joseph Malloch](https://www.dal.ca/faculty/computerscience/faculty-staff/joseph-malloch.html), Dalhousie University, Graphics and Experiential Media ([GEM](https://gem.cs.dal.ca/)) Lab
+
+# Glueing Modalities: Sequencers, Mappers
+
+## How to connect...
+
+:::: {.columns}
+::: {.column width="33%" .fragment}
+Modalities, Signals
+<small>
+
+- Audio
+- Video
+- Touch
+- Interaction
+- ...
+
+</small>
+:::
+::: {.column width="33%" .fragment}
+Environments
+<object data="images/3rdparty/ossia-environments.svg" width="100%"></object>
+<small>
+[ossia](https://ossia.io/)
+</small>
+:::
+::: {.column width="33%" .fragment}
+Protocols
+<object data="images/3rdparty/ossia-protocols.svg" width="100%"></object>
+<small>
+[ossia](https://ossia.io/)
+</small>
+:::
+::::
+
+## SAT's tools and interoperability (2023)
+
+Supporting creative artifacts at the [![](images/logos/SAT.svg){.logo}](https://sat.qc.ca) 
+
+```{=html}
+<iframe width="100%" height="100%" src="web/sat-mtl-tools" title="SAT MTL Tools" style="background:white;"></iframe>
+```
+<!-- Source: [sat-mtl.gitlab.io](https://sat-mtl.gitlab.io) -->
+
+
+## 3 Canadian tools
+
+:::: {.columns}
+::: {.column width="33%"}
+![
+    [Libmapper](https://libmapper.github.io)
+](images/3rdparty/webmapper-list.png)
+:::
+::: {.column width="33%"}
+![
+  [ossia score](https://ossia.io/)
+](images/3rdparty/ossia-score.png)
+:::
+::: {.column width="33%"}
+![
+  [TouchDesigner](https://derivative.ca/)
+](images/3rdparty/futuremusic_1200_02.jpg)
+:::
+::::
+
+# 7th Annual Mapping Tools Workshop 2026
+
+## Program
+
+- Introductions  
+- News & Library updates  
+- Proposals & discussions  
+    - Haptics + Mapping<br/><small>[Christian Frisson](https://profiles.ucalgary.ca/christian-frisson), University of Calgary, [SHIVERS](https://ilab.ucalgary.ca/labs/shivers/) Group </small>
+    - ML + Mapping<br/><small>[Benjamin Lavastre](https://benjaminlavastre.com/), McGill University, Input Devices and Music Interaction Laboratory ([IDMIL](https://www.idmil.org/))</small>
+    - Documentation: probably<br/><small>[D. Andrew Stewart,](https://https//dandrewstewart.ca/) University of Lethbridge, [T-Stickist](https://www.idmil.org/project/the-t-stick/)</small>
+- General discussion & roadmap planning
+
+## Haptics + Mapping
+
+## What senses do haptics stimulate?
+
+![
+  [Cheryl Akner Koler](http://www.cherylaknerkoler.com), 2016
+](images/3rdparty/HapticFeltAttributes.png){width="100%"}
+
+## What devices provide haptic feedback?
+
+![
+  [Dr. Mar Gonzalez-Franco](https://twitter.com/twi_mar/) (Microsoft Research)'s [photograph](https://twitter.com/twi_mar/status/1202351069667323905) of a slide of the presentation from Nick Colonnese (Facebook) at the [Smart Haptics](https://www.smart-haptics.com) conference, 2019
+](images/3rdparty/NickColonnese-Twitter-SHapticsConf-EK-b6BEUEAAUwlp.jpeg){width="100%"}
+
+## What types of haptic signals?
+
+- Vibrotactile
+    - Amplitude signal (input)
+- Force
+    - Position (often output)
+    - Force (often input)
+    - Velocity (often input)
+
+## What properties from haptic signals?
+
+- Medium sampling rate: 
+    - < 0.1 Hz (thermal)
+    - 100-400 Hz (vibrotactile)
+    - &gt; 1000 Hz (force)<small>Colgate, J. E., and J. M. Brown. 1994. “[Factors Affecting the Z-Width of a Haptic Display](https://doi.org/10.1109/ROBOT.1994.351077).” Proceedings of the 1994 IEEE International Conference on Robotics and Automation, May, 3205–10 vol.4.</small>
+- Low latency: <1 ms 
+
+<small>
+More info: Samur, Evren. 2012. [Performance Metrics for Haptic Interfaces](https://doi.org/10.1007/978-1-4471-4225-6). Springer Series on Touch and Haptic Systems. Springer-Verlag.
+</small>
+
+## How to transport haptic signals (in libmapper)?
+
+- TCP/UDP/OSC/Websocket (hard to reach <1ms of latency)?
+- Why not audio (usually 16 bit 44,1 kHz)?
+
+## Haptics in Libmapper?
+
+From [libmapper's README.md future-plans](https://github.com/libmapper/libmapper#future-plans)
+
+> High-frequency data for example might be better transmitted using the [JACK Audio Connection Kit](http://jackaudio.org/) or something similar.
+
+Other solutions: [PireWire](https://github.com/PipeWire/pipewire), [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Intro_to_RTP), ...
+
+## Conclusion
+
+- Supporting **vibrotactile** haptics in libmapper using audio as carrier would expand the design space of haptics by reusing the breadth of audio processing and tools (as started by Ali Israr et al. with [StereoHaptics](https://dl.acm.org/doi/10.1145/2839462.2854120)).
+- Supporting **force-feedback** haptics in libmapper might require sparse signal exchange between modules for their distributed closed-loop control to maintain the stability of haptics.
