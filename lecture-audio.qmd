@@ -1,0 +1,189 @@
+---
+# Extends metadata from _quarto.yml
+subtitle: "Lecture: Audio (Synthesis, Sampling, Spatial)"
+date: 2026-09-17
+---
+
+# Today's outline
+
+- Lecture: Introduction to Audio (Synthesis, Sampling, Spatial)
+- Studio: Hack a PlugData example
+
+# Lecture
+
+Introduction to Audio (Synthesis, Sampling, Spatial)
+
+## Learning Outcomes
+
+- Understanding major concepts in sound creation
+- Exploring gestural control of sound synthesis
+
+## Related courses
+
+- [MUMT 620. Gestural Control of Sound Synthesis. | Course Catalogue - McGill University](https://coursecatalogue.mcgill.ca/courses/mumt-620/)
+- [Lecture Notes and Files | Interactive Music Systems | Music and Theater Arts | MIT OpenCourseWare](https://ocw.mit.edu/courses/21m-385-interactive-music-systems-fall-2016/pages/lecture-notes-and-files/)
+- [Lecture Notes | Music and Technology: Recording Techniques and Audio Production | Music and Theater Arts | MIT OpenCourseWare](https://ocw.mit.edu/courses/21m-380-music-and-technology-recording-techniques-and-audio-production-fall-2016/pages/lecture-notes/)
+- [Daniel Shiffman's Creative Computing (F25) - 07-sound](https://github.com/shiffman/Creative-Computing-F25/tree/main/07-sound)
+
+## Sound Input / Output
+
+Sound as a modality, with examples of related disciplines:
+
+- Sound Input: Sound Analysis, Music Information Retrieval, Vocal Analysis/Control, Audio Miming, Surface Acoustic Waves
+- Sound Output: Sound Synthesis and Sampling, Spatialized Sound, Sonification, Sound Design
+
+## Types of audio tools and processes
+
+- Audio Editors ([Audacity](https://www.audacityteam.org/), ...): editing (inside recordings)
+- Digital Audio Workstations ([Ableton Live](https://www.ableton.com/en/live/), [Apple Logic](https://www.apple.com/ca/logic-pro/)...): recording, editing, mixing, mastering
+- Programming Environments ([Cycling'74 Max](https://cycling74.com/products/max), [PureData](https://puredata.info), [SuperCollider](https://supercollider.github.io/)...): (real-time) programming
+- Programming Libraries ([Essentia](https://essentia.upf.edu/), [Tone.js](https://tonejs.github.io/), ...): programming
+- Sound Synthesizer/Effect Plugins ([VST](https://en.wikipedia.org/wiki/Virtual_Studio_Technology), [AudioUnit](https://en.wikipedia.org/wiki/Audio_plug-in), [LV2](https://en.wikipedia.org/wiki/LV2)...): generating
+- Sound Sample Libraries: sequencing ([Freesound](https://freesound.org/)...)
+- Sound Engines ([ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output), [CoreAudio](https://developer.apple.com/documentation/coreaudio), [WebAudio](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)...): rendering
+- (MIDI / Input) Controllers: mapping
+
+## Sound synthesis (list)
+
+- Additive / Vocoding: multiple oscillators/sources (like an organ)
+- Substractive: sources plus filters
+- Frequency Modulation: carrier wave modulated with frequency of other wave
+- Physical Modelling, including Mass-Link
+- Granular Synthesis: sequencing and transforming short sound samples
+- ... Sampling (including wave tables)!
+- ... ([Synthesizer - Wikipedia](https://en.wikipedia.org/wiki/Synthesizer#Sound_synthesis))
+
+## Sound synthesis (walkthrough)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F1RsE4J9k9w?si=CoRkRofjKa-J6Prp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Sound effects (list)
+
+- Modulation: Chorus, Flanger, Phaser
+- Time-based: Delay, Echo
+- Dynamic: Compression, Expansion, Tremolo
+- Spectral: Filters, EQ, Wah, Reverb, Convolution (impulse responses, from loudspeakers to rooms)
+- Distortion, overdrive... (amp modelling)
+- Vibrato, pitch shifting, harmonizer
+- ...
+
+## Sound effects (walkthrough)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ueAFcwY8nyk?si=VHIHdH0d7j9eppgI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<!-- 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JGGnla8RKP4?si=j58sZFejdDb_owcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ -->
+
+## Spatial sound
+
+### Methods
+
+- Binaural
+- Ambisonics
+- ...
+
+### Formats
+
+- Dolby: Atmos, ...
+
+
+## Sound Analysis
+
+- Frequency (Pitch)
+- Onset
+- Attack, Decay, Systain, Release
+
+::: {.fragment}
+
+```{=html}
+<iframe width="100%" height="500px" src="https://essentia.upf.edu/algorithms_overview.html"></iframe>
+```
+
+:::
+
+## Digital Audio Workstations
+
+Focus on music recording and live (real-time) music playback.
+
+Concepts
+
+- Timeline, sequencer
+- Tracks: Audio, MIDI (Piano roll)
+- Control panels: Effects and Synthesizers (plugins)
+- Sound libraries
+
+## Programming Environments
+
+Focus on live (real-time) music creation.
+
+Approaches:
+
+- Script-based programming: [SuperCollider](https://supercollider.github.io/), [Tone.js](https://tonejs.github.io/)...
+- Visual/Node-based programming: [Cycling'74 Max](https://cycling74.com/products/max), [PureData](https://puredata.info)...
+
+## Combining sound with other modalities
+
+"Gestural control of sound synthesis"
+ 
+## Digital Musical Instruments
+
+> Computers enabled musical instrument players and creators to separate the control from the sound synthesis, that were traditionally bound together in acoustic instruments.
+
+## Cadoz gestes
+
+- Selection
+- Excitation
+- Modification
+
+## Methods to control sound
+
+- [MIDI](https://en.wikipedia.org/wiki/MIDI) (Musical Instrument Digital Interface) (1982): serial communication over 8 bits of events aka control changes
+- [OSC](https://en.wikipedia.org/wiki/Open_Sound_Control) (Open Sound Control) (2002): URI-style messages over network
+- [MPE](https://en.wikipedia.org/wiki/MIDI#MIDI_Polyphonic_Expression) (MIDI Polyphonic Extension) (2017): MIDI extension supporting parallel modification per note / stream (each in one channel)
+- [MIDI 2.0](https://en.wikipedia.org/wiki/MIDI_2.0) (2020): MIDI extension with: Property exchange, MIDI Capability Inquiry, Universal MIDI Packet, New protocol (precision and resolution)
+
+# Studio
+
+Hack an interactive audio artifact
+
+## Find your interactive audio artifact
+
+- (Either) Pick a PlugData/PureData patch
+    - (Easier  - should work directly): PlugData's Documentation Browser > Documentation > 3.audio.examples
+    - (Harder - more complex and you might have to fix it): [Store — plugdata](https://plugdata.org/store.html)
+- (Or) Find a sample that fits your individual pitch idea(s)    
+    - (Even Harder - even more complex and you might have to fix it): find an interactive audio example on [GitHub](https://github.com) (that fits your individual pitch)!
+
+## Install PlugData
+
+[plugdata — A visual programming environment for audio](https://plugdata.org/)
+
+```{=html}
+<iframe width="100%" height="500px" src="https://plugdata.org/"></iframe>
+```
+
+## PlugData Tips
+
+- First adjust your computer volume to halfway.
+- Then activate the DSP in PlugData (power icon on bottom-right).
+- Open documentation browser (square i icon on right side).
+- Start with `testtone.pd`.
+
+## Explore example patches
+
+- Documentation Browser > Documentation > 3.audio.examples
+- [Store — plugdata](https://plugdata.org/store.html)
+
+## Modify your chosen artifact creatively
+
+- Focus on changes that will affect the sonic experience.
+- Make the sound more complex.
+- Combine examples if you wish!
+
+## Prepare your interactive presentation
+
+- Clarify the provenance (what example(s) you used).
+- Explain your intent, design idea.
+- Describe your creative updates.
+- Overview what you might have done next with more time.
