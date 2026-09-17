@@ -7,7 +7,7 @@ date: 2026-09-17
 # Today's outline
 
 - Lecture: Introduction to Audio (Synthesis, Sampling, Spatial)
-- Studio: Hack a PlugData example
+- Studio: Hack an interactive audio artifact
 
 # Lecture
 
@@ -150,7 +150,7 @@ Hack an interactive audio artifact
 ## Find your interactive audio artifact
 
 - (Either) Pick a PlugData/PureData patch
-    - (Easier  - should work directly): PlugData's Documentation Browser > Documentation > 3.audio.examples
+    - (Easier  - should work directly): PlugData's Documentation Browser > Documentation > [3.audio.examples](https://github.com/plugdata-team/plugdata-pd/tree/master/doc/3.audio.examples)
     - (Harder - more complex and you might have to fix it): [Store — plugdata](https://plugdata.org/store.html)
 - (Or) Find a sample that fits your individual pitch idea(s)    
     - (Even Harder - even more complex and you might have to fix it): find an interactive audio example on [GitHub](https://github.com) (that fits your individual pitch)!
