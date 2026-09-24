@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="slide_files/libs/clipboard/clipboard.min.js"></script>
+<script src="slide_files/libs/quarto-html/tabby.min.js"></script>
+<script src="slide_files/libs/quarto-html/popper.min.js"></script>
+<script src="slide_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="slide_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="slide_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="slide_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
+
+  <meta name="author" content="Christian Frisson   ">
+  <meta name="dcterms.date" content="2026-09-24">
+  <title>CPSC 599+601 Creative Computing</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="slide_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="slide_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="slide_files/libs/revealjs/dist/theme/quarto-0e20a1baa64b5e261f758ae5139c2d63.css">
+  <link href="slide_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="slide_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="slide_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="slide_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">CPSC 599+601 Creative Computing</h1>
+  <p class="subtitle">Lecture: Vision (Graphics, Video, Projection Mapping)</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+<a href="https://profiles.ucalgary.ca/christian-frisson">Christian Frisson <br> <img data-src="images/portraits/ChristianFrisson.jpg" class="portrait"></a>
+</div>
+        <p class="quarto-title-affiliation">
+            <a href="https://www.ucalgary.ca">
+            <img data-src="images/logos/Logo_Horz_Colour.png" class="logo">
+            </a>
+          </p>
+        <p class="quarto-title-affiliation">
+            <a href="https://ilab.ucalgary.ca">
+            <img data-src="images/logos/ilab-logo.png" class="logo">
+            </a>
+          </p>
+        <p class="quarto-title-affiliation">
+            <a href="https://ilab.ucalgary.ca/labs/shivers/">
+            <img data-src="images/logos/shivers.png" class="logo">
+            </a>
+          </p>
+    </div>
+</div>
+
+  <p class="date">2026-09-24</p>
+</section>
+<section id="schedule" class="slide level2">
+<h2>Schedule</h2>
+<p><small><small></small></small></p><small><small>
+<p>(Subject to change with notification - in D2L &gt; Course Information &gt; Schedule)</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Week</th>
+<th>Tuesday</th>
+<th>Thursday</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Week 1 (Aug 31 - Sep 4)</td>
+<td><strong>Lecture</strong> (<a href="index.html"><em>Course Intro</em></a>)</td>
+<td><strong>Lecture</strong> (<a href=""><em>Creative Computing</em></a>: Versioning, Documentation, Integration)</td>
+</tr>
+<tr class="even">
+<td>Week 2 (Sep 7-11)</td>
+<td><strong>Lecture</strong> (<a href="lecture-a11y.html"><em>Accessibility</em></a>)</td>
+<td><strong>Lecture</strong> (<a href="lecture-glue.html">*Glueing Modalities</a>: Sequencers, Mappers*) + Mapping Tools Workshop 2026</td>
+</tr>
+<tr class="odd">
+<td>Week 3 (Sep 14-18)</td>
+<td>(Personal) <strong>Pitch</strong> (Course Expectations and Project Ideation)</td>
+<td><strong>Lecture + Studio</strong> (<a href="lecture-audio.html"><em>Audio</em></a>: Synthesis, Sampling, Spatial)</td>
+</tr>
+<tr class="even">
+<td>Week 4 (Sep 21-25)</td>
+<td><strong>Interactive Presentations</strong> (<em>Audio</em>)</td>
+<td><strong>Lecture + Studio</strong> (<a href="lecture-vision.html"><em>Vision</em></a>: Graphics, Video, Projection Mapping)</td>
+</tr>
+<tr class="odd">
+<td>Week 5 (Sep 28 - Oct 2)</td>
+<td><strong>Interactive Presentations</strong> (<em>Vision</em>)</td>
+<td><strong>Lecture + Studio</strong> (<a href="lecture-touch.html"><em>Touch</em></a>: Haptics)</td>
+</tr>
+<tr class="even">
+<td>Week 6 (Oct 5-9)</td>
+<td><strong>Interactive Presentations</strong> (<em>Touch</em>)</td>
+<td><strong>Lecture + Studio</strong> (<a href="lecture-interaction.html"><em>Interaction</em></a>: Input, Cameras, Sensors, Embedded Computing)</td>
+</tr>
+<tr class="odd">
+<td>Week 7 (Oct 12-16)</td>
+<td><strong>Interactive Presentations</strong> (<em>Interaction</em>)</td>
+<td>(Guest) <strong>Lecture</strong> (<a href="lecture-genai.html"><em>Gen AI</em></a>) by <a href="https://abuzreq.com">Ahmed Abuzuraiq</a></td>
+</tr>
+<tr class="even">
+<td>Week 8 (Oct 19-23)</td>
+<td>(Group) <strong>Pitch</strong> (Project Ideation)</td>
+<td>(Group) <strong>Project</strong> (Low-fidelity Prototyping)</td>
+</tr>
+<tr class="odd">
+<td>Week 9 (Oct 26-30)</td>
+<td><strong>Interactive Presentations</strong> (Low-fidelity Prototype Showcase)</td>
+<td>(Group) <strong>Project</strong> (High-fidelity Prototyping)</td>
+</tr>
+<tr class="even">
+<td>Week 10 (Nov 2-6)</td>
+<td><strong>None</strong> (Term Break)</td>
+<td><strong>None</strong> (Term Break)</td>
+</tr>
+<tr class="odd">
+<td>Week 11 (Nov 9-13)</td>
+<td>(Group) <strong>Project</strong> (High-fidelity Prototyping)</td>
+<td>(Group) <strong>Project</strong> (High-fidelity Prototyping)</td>
+</tr>
+<tr class="even">
+<td>Week 12 (Nov 16-20)</td>
+<td><strong>Interactive Presentations</strong> (High-fidelity Prototype Showcase)</td>
+<td>(Group) <strong>Project</strong> (Final Version Prototyping)</td>
+</tr>
+<tr class="odd">
+<td>Week 13 (Nov 23-27)</td>
+<td>(Group) <strong>Project</strong> (Final Version Prototyping)</td>
+<td>(Group) <strong>Project</strong> (Final Version Prototyping)</td>
+</tr>
+<tr class="even">
+<td>Week 14 (Nov 30 - Dec 4)</td>
+<td><strong>Interactive Presentations</strong> (Final Version Showcase)</td>
+<td><strong>Individual Reflections Due</strong> + (Group) <strong>Project</strong> <strong>Documentation Due</strong> + <strong>Lecture</strong> (<em>Course Reflection</em>)</td>
+</tr>
+</tbody>
+</table>
+</small></small><p><small><small></small></small></p>
+</section>
+<section id="todays-outline" class="title-slide slide level1 center">
+<h1>Today’s outline</h1>
+<ul>
+<li class="fragment">Your feedback on Studios!</li>
+<li class="fragment">Lecture: Introduction to Vision (Graphics, Video, Projection Mapping)</li>
+<li class="fragment">Studio: Hack an interactive vis* artifact</li>
+</ul>
+</section>
+
+<section id="your-feedback-on-studios" class="title-slide slide level1 center">
+<h1>Your feedback on Studios!</h1>
+<p>How can we improve studios?</p>
+</section>
+
+<section>
+<section id="lecture" class="title-slide slide level1 center">
+<h1>Lecture</h1>
+<p>Introduction to Vision (Graphics, Video, Projection Mapping)</p>
+</section>
+<section id="learning-outcomes" class="slide level2">
+<h2>Learning Outcomes</h2>
+<ul>
+<li class="fragment">Understanding major concepts in visual input/output modalities</li>
+<li class="fragment">Exploring interactive artifact creation via visual modalities</li>
+</ul>
+</section>
+<section id="related-courses" class="slide level2">
+<h2>Related courses</h2>
+<ul>
+<li class="fragment"><a href="https://github.com/shiffman">Daniel Shiffman</a>
+<ul>
+<li class="fragment"><a href="https://natureofcode.com/">Nature of Code</a></li>
+<li class="fragment"><a href="https://thecodingtrain.com/">The Coding Train</a></li>
+<li class="fragment"><a href="https://github.com/shiffman/Creative-Computing-F25">Creative Computing (F25)</a> - <a href="https://github.com/shiffman/Creative-Computing-F25/tree/main/05-pixels">05-pixels</a> (computer visuals) + <a href="https://github.com/shiffman/Creative-Computing-F25/tree/main/06-ml">06-ml</a> (computer vision)</li>
+</ul></li>
+<li class="fragment"><a href="https://ocw.mit.edu/courses/6-8300-advances-in-computer-vision-spring-2025/">Advances in Computer Vision | Electrical Engineering and Computer Science | MIT OpenCourseWare</a>: <a href="https://scenerepresentations.org/courses/2025/spring/advances-in-cv/">Advances in Computer Vision – Scene Representation Group</a></li>
+</ul>
+</section>
+<section id="visual-input-output" class="slide level2">
+<h2>Visual Input / Output</h2>
+<p>Vision as a modality, with examples of related disciplines:</p>
+<ul>
+<li class="fragment">Visual Input: Computer Vision, Multimodal/Multimedia Information Retrieval…</li>
+<li class="fragment">Visual Output: Computer Graphics, Information Visualization, Projection Mapping…</li>
+</ul>
+</section>
+<section id="types-of-visual-tools-and-processes" class="slide level2">
+<h2>Types of visual tools and processes</h2>
+<ul>
+<li class="fragment">Pixel-based editors (<a href="https://www.adobe.com">Adobe</a> Photoshop, <a href="https://www.gimp.org/">GIMP</a>…)</li>
+<li class="fragment">Vector-based editors (<a href="https://www.adobe.com">Adobe</a> InDesign, <a href="https://inkscape.org">Inkscape</a>…)</li>
+<li class="fragment">Computer vision models (<a href="https://developers.google.com/edge/mediapipe/solutions/guide">Google MediaPipe</a>, <a href="https://ml5js.org">ml5.js</a>…)</li>
+<li class="fragment">Script-based programming environments (<a href="https://www.processing.org/">Processing</a> family including <a href="https://processing.org/">Java</a> + <a href="https://p5js.org">JavaScript</a> + <a href="https://py.processing.org/">Python</a>)</li>
+<li class="fragment">Projection Mapping (<a href="https://gitlab.com/splashmapper/splash">splash</a>…)</li>
+<li class="fragment">(Information) Visualization (<a href="https://d3js.org/">d3.js</a>, <a href="https://explorabl.es/tools/">tools for Explorable Explanations</a>)…</li>
+<li class="fragment">GenAI tools (teaser while waiting for <a href="https://abuzreq.com">Ahmed Abuzuraiq</a>’s guest lecture on <a href="lecture-genai.html">GenAI</a>: <a href="https://www.metacreation.net/autolume">Autolume</a>…)</li>
+</ul>
+</section></section>
+<section>
+<section id="studio" class="title-slide slide level1 center">
+<h1>Studio</h1>
+<p>Hack an interactive vis* artifact</p>
+<blockquote>
+<p>vis* includes computer vision and computer-generated visuals, your choice!</p>
+</blockquote>
+</section>
+<section id="find-your-interactive-vis-artifact" class="slide level2">
+<h2>Find your interactive vis* artifact</h2>
+<ul>
+<li class="fragment">(Either) Pick a <a href="https://processing.org/">Processing</a> script
+<ul>
+<li class="fragment">(Easiest - should work directly): <a href="https://p5js.org/examples/">Examples</a>, <a href="https://p5js.org/tutorials/">Tutorials</a>, <a href="https://p5js.org/community/">Community</a>…</li>
+</ul></li>
+<li class="fragment">(Or) Find a sample that fits your individual pitch idea(s)
+<ul>
+<li class="fragment">(Harder - even more complex and you might have to fix it): find an interactive vis* example on <a href="https://github.com">GitHub</a> (that fits your individual pitch)!</li>
+</ul></li>
+</ul>
+</section>
+<section id="install-processing" class="slide level2">
+<h2>Install Processing</h2>
+<p>Your choice (by order of maturity - <a href="https://p5js.org/">p5.js</a> highly suggested):</p>
+<ul>
+<li class="fragment"><a href="https://processing.org/">Processing.org</a> (Java)</li>
+<li class="fragment"><a href="https://p5js.org/">p5.js</a> (JavaScript) -&gt; just <a href="https://editor.p5js.org/?version=2.3.3">Start Coding</a>!</li>
+<li class="fragment"><a href="https://py.processing.org/">Python Mode for Processing</a></li>
+<li class="fragment"><a href="https://android.processing.org/">Processing for Android</a></li>
+</ul>
+</section>
+<section id="explore-examples" class="slide level2">
+<h2>Explore examples</h2>
+<ul>
+<li class="fragment"><a href="https://p5js.org/examples/">Examples</a></li>
+<li class="fragment"><a href="https://p5js.org/tutorials/">Tutorials</a></li>
+<li class="fragment"><a href="https://p5js.org/community/">Community</a>…</li>
+</ul>
+</section>
+<section id="modify-your-chosen-artifact-creatively" class="slide level2">
+<h2>Modify your chosen artifact creatively</h2>
+<ul>
+<li class="fragment">Focus on changes that will affect the vis* experience.</li>
+<li class="fragment">Make the visual modality more complex.</li>
+<li class="fragment">Combine examples if you wish!</li>
+</ul>
+</section>
+<section id="prepare-your-interactive-presentation" class="slide level2">
+<h2>Prepare your interactive presentation</h2>
+<ul>
+<li class="fragment">Create a file named: <code>interactive-presentation-vision.qmd</code></li>
+<li class="fragment">Clarify the provenance (what example(s) you used).</li>
+<li class="fragment">Explain your intent, design idea.</li>
+<li class="fragment">Describe your creative updates.</li>
+<li class="fragment">Overview what you might have done next with more time.</li>
+</ul>
+</section>
+<section id="tip-for-interactive-presentations" class="slide level2">
+<h2>Tip for interactive presentations</h2>
+<p>Embed your web-based example (if applicable) via an <code>iframe</code> (<a href="https://quarto.org/docs/authoring/markdown-basics.html#raw-content">quarto doc</a>):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="" aria-label="1"></a>    ```{=html}</span>
+<span id="cb1-2"><a href="" aria-label="2"></a>    <span class="dt">&lt;</span><span class="kw">iframe</span><span class="ot"> width</span><span class="op">=</span><span class="st">"100%"</span><span class="ot"> height</span><span class="op">=</span><span class="st">"100%"</span><span class="ot"> src</span><span class="op">=</span><span class="st">"..."</span><span class="dt">&gt;&lt;/</span><span class="kw">iframe</span><span class="dt">&gt;</span></span>
+<span id="cb1-3"><a href="" aria-label="3"></a>    ```</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/logos/CMD-green.svg" class="slide-logo"></p>
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="slide_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="slide_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="slide_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="slide_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="slide_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="slide_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="slide_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="slide_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="slide_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="slide_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

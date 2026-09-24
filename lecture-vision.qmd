@@ -1,0 +1,104 @@
+---
+# Extends metadata from _quarto.yml
+subtitle: "Lecture: Vision (Graphics, Video, Projection Mapping)"
+date: 2026-09-24
+---
+
+{{< include schedule.qmd >}}
+
+# Today's outline
+
+- Your feedback on Studios!
+- Lecture: Introduction to Vision (Graphics, Video, Projection Mapping)
+- Studio: Hack an interactive vis* artifact
+
+# Your feedback on Studios!
+
+How can we improve studios?
+
+# Lecture
+
+Introduction to Vision (Graphics, Video, Projection Mapping)
+
+## Learning Outcomes
+
+- Understanding major concepts in visual input/output modalities
+- Exploring interactive artifact creation via visual modalities
+
+## Related courses
+
+- [Daniel Shiffman](https://github.com/shiffman)
+    - [Nature of Code](https://natureofcode.com/)
+    - [The Coding Train](https://thecodingtrain.com/)
+    - [Creative Computing (F25)](https://github.com/shiffman/Creative-Computing-F25) - [05-pixels](https://github.com/shiffman/Creative-Computing-F25/tree/main/05-pixels) (computer visuals) + [06-ml](https://github.com/shiffman/Creative-Computing-F25/tree/main/06-ml) (computer vision)
+- [Advances in Computer Vision | Electrical Engineering and Computer Science | MIT OpenCourseWare](https://ocw.mit.edu/courses/6-8300-advances-in-computer-vision-spring-2025/): [Advances in Computer Vision – Scene Representation Group](https://scenerepresentations.org/courses/2025/spring/advances-in-cv/)
+
+## Visual Input / Output
+
+Vision as a modality, with examples of related disciplines:
+
+- Visual Input: Computer Vision, Multimodal/Multimedia Information Retrieval...
+- Visual Output: Computer Graphics, Information Visualization, Projection Mapping...
+
+## Types of visual tools and processes
+
+- Pixel-based editors ([Adobe](https://www.adobe.com) Photoshop, [GIMP](https://www.gimp.org/)...)
+- Vector-based editors ([Adobe](https://www.adobe.com) InDesign, [Inkscape](https://inkscape.org)...)
+- Computer vision models ([Google MediaPipe](https://developers.google.com/edge/mediapipe/solutions/guide), [ml5.js](https://ml5js.org)...)
+- Script-based programming environments ([Processing](https://www.processing.org/) family including [Java](https://processing.org/) + [JavaScript](https://p5js.org) + [Python](https://py.processing.org/))
+- Projection Mapping ([splash](https://gitlab.com/splashmapper/splash)...)
+- (Information) Visualization ([d3.js](https://d3js.org/),  [tools for Explorable Explanations](https://explorabl.es/tools/))...
+- GenAI tools (teaser while waiting for [Ahmed Abuzuraiq](https://abuzreq.com)'s guest lecture on [GenAI](lecture-genai.html): [Autolume](https://www.metacreation.net/autolume)...)
+
+
+# Studio
+
+Hack an interactive vis* artifact
+
+> vis* includes computer vision and computer-generated visuals, your choice!
+
+## Find your interactive vis* artifact
+
+- (Either) Pick a [Processing](https://processing.org/) script
+    - (Easiest  - should work directly): [Examples](https://p5js.org/examples/), [Tutorials](https://p5js.org/tutorials/), [Community](https://p5js.org/community/)...
+- (Or) Find a sample that fits your individual pitch idea(s)    
+    - (Harder - even more complex and you might have to fix it): find an interactive vis* example on [GitHub](https://github.com) (that fits your individual pitch)!
+
+## Install Processing
+
+Your choice (by order of maturity - [p5.js](https://p5js.org/) highly suggested):
+
+- [Processing.org](https://processing.org/) (Java)
+- [p5.js](https://p5js.org/) (JavaScript) -> just [Start Coding](https://editor.p5js.org/?version=2.3.3)!
+- [Python Mode for Processing](https://py.processing.org/)
+- [Processing for Android](https://android.processing.org/)
+
+## Explore examples
+
+- [Examples](https://p5js.org/examples/)
+- [Tutorials](https://p5js.org/tutorials/)
+- [Community](https://p5js.org/community/)...
+
+## Modify your chosen artifact creatively
+
+- Focus on changes that will affect the vis* experience.
+- Make the visual modality more complex.
+- Combine examples if you wish!
+
+## Prepare your interactive presentation
+
+- Create a file named: `interactive-presentation-vision.qmd`
+- Clarify the provenance (what example(s) you used).
+- Explain your intent, design idea.
+- Describe your creative updates.
+- Overview what you might have done next with more time.
+
+## Tip for interactive presentations
+
+Embed your web-based example (if applicable) via an `iframe` ([quarto doc](https://quarto.org/docs/authoring/markdown-basics.html#raw-content)):
+
+```html
+    ```{=html}
+    <iframe width="100%" height="100%" src="..."></iframe>
+    ```
+```
