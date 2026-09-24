@@ -4,6 +4,8 @@ subtitle: "Lecture: Audio (Synthesis, Sampling, Spatial)"
 date: 2026-09-17
 ---
 
+{{< include schedule.qmd >}}
+
 # Today's outline
 
 - Lecture: Introduction to Audio (Synthesis, Sampling, Spatial)
