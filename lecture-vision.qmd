@@ -16,6 +16,15 @@ date: 2026-09-24
 
 How can we improve studios?
 
+## Suggestions
+
+- Individual presentations in pairs?
+    - Conflicts with course outline!
+- Reduce presentation time from 4 to 3 min
+    - OK!
+- Spread individual presentations over schedule?
+    - Conflicts with course outline!
+
 # Lecture
 
 Introduction to Vision (Graphics, Video, Projection Mapping)
