@@ -263,12 +263,12 @@ Hack an interactive haptic artifact
 
 ## Find your interactive haptic artifact
 
-- (Either) Pick a [chai3d](https://github.com/chai3d/chai3d) example
+- (Either) Pick a [chai3d](https://github.com/ucalgary-shivers/chai3d) example
     - (Easiest - should work directly)!
-      - [chai3d/examples/GLFW](https://github.com/chai3d/chai3d/tree/master/examples/GLFW)
-      - [chai3d/modules/Bullet/examples/GLFW](https://github.com/chai3d/chai3d/tree/master/modules/Bullet/examples)
-      - [chai3d/modules/GEL/examples/GLFW](https://github.com/chai3d/chai3d/tree/master/modules/GEL/examples/GLFW)
-      - [chai3d/modules/ODE/examples/GLFW](https://github.com/chai3d/chai3d/tree/master/modules/ODE/examples/GLFW)
+      - [chai3d/examples/GLFW](https://github.com/ucalgary-shivers/chai3d/tree/master/examples/GLFW)
+      - [chai3d/modules/Bullet/examples/GLFW](https://github.com/ucalgary-shivers/chai3d/tree/master/modules/Bullet/examples)
+      - [chai3d/modules/GEL/examples/GLFW](https://github.com/ucalgary-shivers/chai3d/tree/master/modules/GEL/examples/GLFW)
+      - [chai3d/modules/ODE/examples/GLFW](https://github.com/ucalgary-shivers/chai3d/tree/master/modules/ODE/examples/GLFW)
       - ...
 - (Or) Find a sample that fits your individual pitch idea(s)    
     - (Harder - even more complex and you might have to fix it): find an interactive haptic example on [GitHub](https://github.com/search?q=haptic&type=repositories) (that fits your individual pitch)! 
