@@ -8,8 +8,7 @@ date: 2026-09-03
 
 # Today's outline
 
-- Introduction
-- Communication
+- Lecture: Creative Computing
 - Installation
 
 # Introduction
@@ -353,7 +352,7 @@ Here is [Steve Sutcliffe](https://profiles.ucalgary.ca/steve-sutcliffe)'s [playl
 
 <iframe width="100%" height="85%" src="https://www.youtube.com/embed/videoseries?si=z1xU8jxhmZPbCIIZ&amp;list=PLWuPyCyP7tT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-# Next steps
+# Next steps {.scrollable}
 
 ::::: columns
 ::: {.column width="50%"}
@@ -363,7 +362,7 @@ Develop
 - **Create** a [GitHub](https://github.com/) account.
 - **Share** it with [ChristianFrisson](https://github.com/ChristianFrisson) by following his account.
 - [ChristianFrisson](https://github.com/ChristianFrisson) will create a [new GitHub repository](https://github.com/new) in [ucalgary-cmd](https://github.com/ucalgary-cmd) for your individual interactive presentations and pitch:
-  - Name: `CPSC599-601-CreativeComputing-F26-<name>`
+  - Name: `CPSC599-601-CreativeComputing-F26-<username>`
   - Visibility: first private, then your choice to make it public.
   - License: your choice (tip: [choosealicense.com](https://choosealicense.com/)).
 - [ChristianFrisson](https//github.com/ChristianFrisson) will invite you to join your repository as admin.

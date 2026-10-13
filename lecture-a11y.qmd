@@ -1,7 +1,7 @@
 ---
 # Extends metadata from _quarto.yml
 subtitle: "Lecture: Accessibility"
-date: 2026-09-01
+date: 2026-09-08
 ---
 
 {{< include schedule.qmd >}}

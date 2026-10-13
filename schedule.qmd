@@ -19,8 +19,8 @@
 | Week 7 (Oct 12-16) | **Interactive Presentations** (*Touch*) + **Studio** ([*Interaction*](lecture-interaction.html))  | (Guest) **Lecture** ([*Gen AI*](lecture-genai.html)) by [Ahmed Abuzuraiq](https://abuzreq.com) |
 | Week 8 (Oct 19-23) | **Interactive Presentations** (*Interaction*)  | (Group) **Pitch** (Project Ideation) |
 | Week 9 (Oct 26-30) | (Group) **Project** (Low-fidelity Prototyping)  | **Interactive Presentations** (Low-fidelity Prototype Showcase) |
-| Week 10 (Nov 2-6) | **None** (Term Break) | **None** (Term Break) |
-| Week 11 (Nov 9-13) | (Group) **Project** (High-fidelity Prototyping) | (Group) **Project** (High-fidelity Prototyping) |
+| Week 10 (Nov 2-6) | (Group) **Project** (High-fidelity Prototyping) | (Group) **Project** (High-fidelity Prototyping) |
+| Week 11 (Nov 9-13) | **None** (Term Break) | **None** (Term Break) |
 | Week 12 (Nov 16-20) | **Interactive Presentations** (High-fidelity Prototype Showcase) | (Group) **Project** (Final Version Prototyping) |
 | Week 13 (Nov 23-27) | (Group) **Project** (Final Version Prototyping) | (Group) **Project** (Final Version Prototyping) |
 | Week 14 (Nov 30 - Dec 4) | **Interactive Presentations** (Final Version Showcase) | **Individual Reflections Due** + (Group) **Project** **Documentation Due** + **Lecture** (*Course Reflection*) |
